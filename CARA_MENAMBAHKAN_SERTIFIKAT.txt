@@ -1,0 +1,35 @@
+CARA MENAMBAHKAN SERTIFIKAT
+
+Untuk setiap card sertifikat di index.html:
+
+1. Taruh gambar sertifikat di folder yang sama dengan index.html.
+   Contoh:
+   sertifikat-1.jpg
+   sertifikat-2.jpg
+   sertifikat-3.jpg
+
+2. Ubah bagian:
+   src="sertifikat-1.jpg"
+
+3. Ubah link:
+   href="https://example.com/sertifikat-1"
+
+4. Atur ukuran area gambar pada:
+   style="--certificate-width: 100%; --certificate-height: 210px;"
+
+   Contoh:
+   --certificate-height: 250px
+
+   Untuk gambar lebih kecil:
+   --certificate-width: 90%;
+   --certificate-height: 180px;
+
+5. Jika gambar sertifikat punya ukuran berbeda, tidak masalah.
+   CSS menggunakan object-fit: contain sehingga seluruh sertifikat tetap terlihat.
+
+6. Card sertifikat dapat diklik dan akan membuka situs sertifikat di tab baru.
+
+CATATAN:
+- Ganti example.com dengan URL sertifikat asli.
+- Nama file gambar harus sama persis dengan yang ditulis di src.
+- Untuk sertifikat PNG gunakan misalnya src="sertifikat-1.png".
